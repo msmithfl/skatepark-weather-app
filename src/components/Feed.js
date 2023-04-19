@@ -1,5 +1,6 @@
 import React from "react";
+import "../App.css";
 
 export default function Feed() {
-  return <div>Feed</div>;
+  return <div className="feed-container">Feed</div>;
 }
