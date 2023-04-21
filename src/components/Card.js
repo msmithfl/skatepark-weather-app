@@ -10,6 +10,7 @@ export default function Card() {
       <div className="flex items-center">
         <img className="w-20" alt="weather-icon" src="icons/01d.png" />
         <p className="text-4xl text-right">76°F</p>
+        <i className="fa-solid fa-plus"></i>
       </div>
     </div>
   );
