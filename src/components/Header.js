@@ -3,8 +3,10 @@ import "../App.css";
 
 export default function Header() {
   return (
-    <div className="flex justify-center m-2">
-      <h1 className="text-3xl m-2 uppercase">Skatepark Weather App</h1>
+    <div className="flex justify-center m-4">
+      <h1 className="font-bold sm:text-3xl uppercase text-center">
+        Skatepark Weather App
+      </h1>
     </div>
   );
 }

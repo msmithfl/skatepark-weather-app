@@ -1,15 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 
-function LocationInput() {
+function requestCoordinates() {
   const [coordinates, setCoordinates] = useState(null);
-
-  // handle input change event
-  const handleInputChange = (event) => {
-    const location = event.target.value;
-    getCoordinates(location);
-    console.log(coordinates);
-  };
 
   // call the geocoding API to get the coordinates of the location
   const getCoordinates = async (location) => {
@@ -27,15 +20,6 @@ function LocationInput() {
       console.log("nothing found");
     }
   };
-
-  return (
-    <input
-      className="border outline-none rounded"
-      placeholder="Enter city"
-      type="text"
-      onChange={handleInputChange}
-    />
-  );
 }
 
-export default LocationInput;
+export default getCoordinates;

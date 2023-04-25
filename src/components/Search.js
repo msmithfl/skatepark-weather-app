@@ -3,7 +3,7 @@ import "../App.css";
 
 export default function Search() {
   return (
-    <div className="flex justify-center gap-1">
+    <div className="flex flex-col gap-2 mx-2 sm:flex-row sm:justify-center">
       <input className="border outline-none rounded" placeholder="Enter city" />
       <input
         className="border outline-none rounded"
