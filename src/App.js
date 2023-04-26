@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Search from "./components/Search";
 import Feed from "./components/Feed";
+import CityForm from "./components/CityForm";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Search />
       <Feed />
+      <CityForm />
     </>
   );
 }
