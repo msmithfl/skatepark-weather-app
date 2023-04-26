@@ -9,10 +9,10 @@ export default function Card() {
       </div>
       <div className="flex items-center">
         <div className="flex flex-col items-center">
-          <img className="w-11" alt="weather-icon" src="icons/01d.png" />
+          <img className="w-12" alt="weather-icon" src="icons/01d.png" />
           <p className="font-bold text-black">76°F</p>
         </div>
-        <i className="fa-solid fa-plus text-slate-100/[.4] text-xl pl-2"></i>
+        <i className="fa-regular fa-heart text-slate-100/[.4] text-lg pl-3 pr-1"></i>
       </div>
     </div>
   );

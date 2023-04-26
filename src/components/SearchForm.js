@@ -20,7 +20,7 @@ const SearchForm = () => {
   return (
     <div>
       <form
-        className="flex flex-col gap-2 mx-2 sm:flex-row sm:justify-center"
+        className="flex flex-col gap-2 mx-2 sm:items-center sm:flex-row sm:justify-center"
         onSubmit={handleSubmit}
       >
         <p className="text-center italic text-gray-300">
