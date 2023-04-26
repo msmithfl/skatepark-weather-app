@@ -1,15 +1,13 @@
 import Header from "./components/Header";
-import Search from "./components/Search";
+import SearchForm from "./components/SearchForm";
 import Feed from "./components/Feed";
-import CityForm from "./components/CityForm";
 
 function App() {
   return (
     <>
       <Header />
-      <Search />
+      <SearchForm />
       <Feed />
-      <CityForm />
     </>
   );
 }
