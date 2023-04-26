@@ -9,12 +9,9 @@ const SearchForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const { lat, lng } = await getCoordinates(city);
+    const { lat, lng, response } = await getCoordinates(city, radius);
 
     setCoordinates({ lat, lng });
-    console.log(radius);
-    console.log(lat, lng);
-    console.log(coordinates);
   };
 
   return (
@@ -35,7 +32,7 @@ const SearchForm = () => {
         />
         <input
           className="border outline-none rounded text-black"
-          type="number"
+          type="text"
           placeholder="Enter radius"
           value={radius}
           onChange={(event) => setRadius(event.target.value)}
