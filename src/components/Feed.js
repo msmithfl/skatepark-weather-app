@@ -1,9 +1,10 @@
 import React from "react";
-import Card from "./Card";
+//import Card from "./Card";
 
 export default function Feed() {
   return (
     <div className="flex flex-col justify-center m-2">
+      Feed
       {/* <Card />
       <Card /> */}
     </div>

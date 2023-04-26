@@ -14,6 +14,7 @@ const SearchForm = () => {
     setCoordinates({ lat, lng });
     console.log(radius);
     console.log(lat, lng);
+    console.log(coordinates);
   };
 
   return (
@@ -22,37 +23,29 @@ const SearchForm = () => {
         className="flex flex-col gap-2 mx-2 sm:flex-row sm:justify-center"
         onSubmit={handleSubmit}
       >
-        <p className="text-center italic text-gray-500">
+        <p className="text-center italic text-gray-300">
           Search skateparks in your area.
         </p>
         <input
-          className="border outline-none rounded"
+          className="border outline-none rounded text-black"
           type="text"
           placeholder="Enter city"
           value={city}
           onChange={(event) => setCity(event.target.value)}
         />
         <input
-          className="border outline-none rounded"
+          className="border outline-none rounded text-black"
           type="number"
           placeholder="Enter radius"
           value={radius}
           onChange={(event) => setRadius(event.target.value)}
         />
         <button
-          className="bg-slate-100 p-1 rounded hover:duration-100 hover:bg-slate-200"
+          className="bg-slate-100 p-1 rounded hover:duration-100 hover:bg-slate-200 text-black"
           type="submit"
         >
           Submit
         </button>
-        {/* {coordinates && (
-          <div>
-            <p>
-              Latitude: {coordinates.lat}, Longitude: {coordinates.lng}
-            </p>
-            <p>Radius : {radius}</p>
-          </div>
-        )} */}
       </form>
     </div>
   );
