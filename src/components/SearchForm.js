@@ -9,7 +9,7 @@ const SearchForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const { lat, lng, response } = await getCoordinates(city, radius);
+    const { lat, lng } = await getCoordinates(city, radius);
 
     setCoordinates({ lat, lng });
   };
